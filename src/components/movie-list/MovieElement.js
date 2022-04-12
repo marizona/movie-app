@@ -3,21 +3,18 @@ import React, { Component } from "react";
 export default class MovieElement extends Component {
   render() {
     return (
-      <div className="w-25 p-2">
-        <div className="card">
+      <div className="w-50 p-2">
+        <div className="border d-flex">
           <img
-            src="https://static.wikia.nocookie.net/familyguyfanon/images/e/e9/Gladiator.jpg/revision/latest?cb=20190720082049"
+            src={this.props.movie.img}
             alt="gladiator"
-            className="card-img-top"
+            width="150"
+            height="200"
           />
-          <div className="card-body">
-            <h5 className="card-title">Gladiator</h5>
-            <p className="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              ducimus, maxime et voluptatem sequi aliquam sit quae qui quaerat
-              ab modi officiis deserunt rem, asperiores porro culpa minima,
-              eveniet dolorem!
-            </p>
+          <div className="flex-fill d-flex flex-column p-3">
+            <h5>{this.props.movie.title}</h5>
+            <hr className="w-100"/>
+        <span>{this.props.movie.details}</span>
           </div>
         </div>
       </div>
