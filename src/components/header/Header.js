@@ -6,7 +6,7 @@ export default class Header extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand App-logo-spin " href="/">
             AlloMovies
           </a>
           <button
