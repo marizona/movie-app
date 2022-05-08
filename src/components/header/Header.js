@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export default class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <div className="container-fluid">
           <a className="navbar-brand App-logo-spin " href="/">
             AlloMovies
